@@ -1,0 +1,22 @@
+:root {
+  --brand-primary: #1B6B3A;
+  --brand-secondary: #F5A623;
+  --sidebar-bg: #1B2B3A;
+  --sidebar-text: #FFFFFF;
+  --sidebar-active-border: #1B6B3A;
+  --page-bg: #F7F7F5;
+  --card-bg: #FFFFFF;
+  --card-border: #EDEDEA;
+  --text-primary: #141412;
+  --text-secondary: #3D3D3A;
+  --text-muted: #9E9E9B;
+  --success: #2E7D32;
+  --warning: #F59E0B;
+  --error: #C62828;
+  --info: #1565C0;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-card: none;
+  --border: 0.5px solid #EDEDEA;
+}

@@ -1,0 +1,53 @@
+.payments-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.summary-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.summary-card {
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.summary-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.summary-value {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.currency {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.method-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.method-badge.cash {
+  background: rgba(245, 166, 35, 0.15);
+  color: #D38D1C;
+}
+
+.method-badge.telebirr {
+  background: rgba(21, 101, 192, 0.15);
+  color: var(--info);
+}

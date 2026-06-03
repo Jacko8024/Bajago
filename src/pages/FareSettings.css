@@ -1,0 +1,149 @@
+.fare-settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-banner {
+  background: rgba(245, 166, 35, 0.1);
+  border: 1px solid rgba(245, 166, 35, 0.3);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-banner p {
+  color: #B27616; /* Darker amber for text readability */
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.fare-cards-container {
+  display: flex;
+  gap: 24px;
+}
+
+.fare-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fare-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: var(--border);
+}
+
+.fare-card-header h3 {
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.fare-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.input-group input {
+  padding: 12px 16px;
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  color: var(--text-primary);
+  background: var(--page-bg);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: var(--brand-primary);
+}
+
+.fare-preview {
+  background: var(--page-bg);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 24px;
+  border: 1px dashed #D0D0D0;
+  text-align: center;
+}
+
+.preview-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.preview-calc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.preview-result {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--brand-primary);
+}
+
+.save-btn {
+  background: var(--brand-primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  width: 100%;
+  margin-bottom: 12px;
+  transition: opacity 0.2s;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
+}
+
+.reset-link {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.reset-link:hover {
+  color: var(--error);
+}
+
+.last-updated {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}

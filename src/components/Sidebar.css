@@ -1,0 +1,111 @@
+.sidebar {
+  width: 240px;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sidebar-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-circle {
+  width: 28px;
+  height: 28px;
+  background: var(--brand-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.logo-text {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: var(--sidebar-text);
+  opacity: 0.6;
+  border-left: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.nav-item:hover {
+  opacity: 1;
+}
+
+.nav-item.active {
+  opacity: 1;
+  border-left-color: var(--sidebar-active-border);
+  background: rgba(27, 107, 58, 0.15);
+  font-weight: 500;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.logout-btn:hover {
+  color: #fff;
+}

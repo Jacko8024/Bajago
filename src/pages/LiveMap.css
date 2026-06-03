@@ -1,0 +1,52 @@
+.live-map-container {
+  height: calc(100vh - 124px); /* Subtract header and padding */
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: var(--border);
+  position: relative;
+}
+
+.map-legend {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Above map tiles */
+  border: var(--border);
+  width: 180px;
+}
+
+.map-legend h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.driver-popup .leaflet-popup-content {
+  margin: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+}

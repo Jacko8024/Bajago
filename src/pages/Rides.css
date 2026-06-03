@@ -1,0 +1,46 @@
+.rides-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: calc(100vh - 124px);
+}
+
+.export-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.export-btn:hover {
+  background: var(--page-bg);
+}
+
+.date-cell {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.route-text {
+  max-width: 150px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.metrics-cell {
+  font-size: 13px;
+}
+
+.duration-text {
+  color: var(--text-muted);
+  font-size: 12px;
+}

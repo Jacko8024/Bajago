@@ -1,0 +1,76 @@
+.topbar {
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 0.5px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--page-bg);
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  color: var(--text-primary);
+}
+
+.icon-btn {
+  position: relative;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.icon-btn:hover {
+  background: var(--page-bg);
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--error);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+}
